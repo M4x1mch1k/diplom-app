@@ -1,0 +1,30 @@
+.applicantTypeSelector {
+    /* display: block; */
+    text-align: left;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* width: fit-content; */
+  }
+  
+  .radio-group-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .radio-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .radio-option input {
+    margin-right: 8px; 
+  }
+  
+  .separator {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }

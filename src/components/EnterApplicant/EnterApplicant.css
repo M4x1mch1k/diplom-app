@@ -1,0 +1,162 @@
+.enterApplicant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .formBlocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+  }
+  
+  .formBlock {
+    flex: 0 0 45%;
+    position: relative; /* Add relative positioning to the parent container */
+    margin-bottom: 0; /* Remove bottom margin from .formBlock if not needed */
+    padding-bottom: 30px;
+  }
+
+  .formBlock input,
+  .formBlock .datepicker-custom,
+  .formBlock select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 5px; /* Maintain the margin for the input fields */
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      font-size: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  
+  .cancelButton {
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .nextButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .blockSeparator {
+    border-bottom: 1px solid black;
+    margin-bottom: 16px; 
+  }
+
+  .react-datepicker-wrapper {
+    width: 100%; /* This makes the DatePicker wrapper full width */
+  }
+  
+  .react-datepicker__input-container input {
+    width: 100%; 
+    padding: 5px;
+  }
+  
+  .enterApplicant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.formBlocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.formBlock {
+  flex: 1;
+  min-width: 200px; 
+  margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.field-input, .datepicker-custom, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.cancelButton, .nextButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nextButton {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.cancelButton {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem; /* Slightly decrease the font size for error messages */
+  margin: 5px 0 10px 0; /* Provide spacing for error message */
+  height: 14px; /* Fixed height for the error message */
+  display: block;
+}
+
+/* Styling for disabled select - if needed */
+select:disabled {
+    background-color: #f8f9fa;
+    color: #6c757d;
+}
+
+.input-error {
+  border: 2px solid red; /* Red border for error */
+  background-color: #ffcccc; /* Light red background */
+}
+
+.required-star {
+  color: red;
+  margin-left: 4px;
+}

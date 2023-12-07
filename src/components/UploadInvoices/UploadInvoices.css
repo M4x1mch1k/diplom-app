@@ -1,0 +1,103 @@
+.uploadInvoices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .formBlocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+  }
+  
+  .formBlock {
+    flex: 0 0 45%;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .invoicesTable {
+    width: 50%; /* Adjusted to half of the full width */
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .invoicesTable th, .invoicesTable td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .emptyRow {
+    text-align: left;
+    padding-left: 8px;
+  }
+  
+  .addInvoiceButton {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .invoicesTable .trashButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  /* Style for the trash icon */
+  .trashIcon {
+    width: 20px; /* Adjust size as needed */
+    height: auto;
+  }
+
+  .buttonContainer {
+    grid-column: 1 / span 1; /* Position the button under the first column */
+    padding-top: 10px; /* Provide some space between the table and button */
+  }
+
+  .footerNavigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the button container */
+  }
+  
+  .backButton, .nextButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .backButton {
+    background-color: #6c757d; /* Different color for back button */
+  }
+
+  .error-message {
+    color: red;
+    margin: 10px 0;
+  }
+
+  .input-error {
+    border: 2px solid red;
+    background-color: #ffcccc;
+  }
+  

@@ -1,0 +1,65 @@
+.summaryContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-left: 10%; 
+  }
+  
+  .collapsibleButton {
+    background-color: white; 
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 5px; 
+    text-align: left;
+    border: none;
+    width: auto;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .collapsibleButton:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .collapsibleButton:focus {
+    outline: none; 
+  }
+  
+  .summaryHeader {
+    text-align: center;
+    width: 100%;
+    font-size: 2em; 
+    margin-top: 20px;
+  }
+  
+  input[readonly] {
+    outline: none;
+  }
+
+  .cancelButton {
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .submitButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .error-message {
+    color: red;
+    margin: 10px 0;
+  }
+
+  .backToHomeNavigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

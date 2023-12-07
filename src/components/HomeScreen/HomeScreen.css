@@ -1,0 +1,67 @@
+.homeScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: #f4f4f4; /* Light gray background */
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: #333;
+  font-size: 2em;
+}
+
+.newApplicationButton button {
+  padding: 10px 15px;
+  background-color: #007bff; /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.newApplicationButton button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.applicationsTable {
+  width: 80%; /* Adjusted width */
+  margin-top: 20px;
+}
+
+.applicationsTable table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.applicationsTable th, .applicationsTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.applicationsTable th {
+  background-color: #007bff;
+  color: white;
+}
+
+.clickableId {
+  cursor: pointer;
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.clickableId:hover {
+  text-decoration: none; /* or use 'underline' if you prefer */
+  color: #003580;
+}

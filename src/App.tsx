@@ -1,25 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ApplicantProvider } from './context/ApplicantContext';
+import { ApplicationDataProvider } from './context/ApplicationContext';
+import ApplicantLogin from './components/ApplicantLogin';
+import ClerkLogin from './components/ClerkLogin';
+import SignUpPage from './components/SignUpPage';
+import HomeScreen from './components/HomeScreen/HomeScreen';
+import EnterApplicant from './components/EnterApplicant/EnterApplicant';
+import UploadInvoices from './components/UploadInvoices/UploadInvoices';
+import OverviewInvoices from './components/OverviewInvoices/OverviewInvoices';
+import Summary from './components/Summary/Summary';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ApplicationDataProvider>
+        <ApplicantProvider>
+        <Router>
+          <Routes>
+            <Route path="/" element={<ApplicantLogin />} />
+            <Route path="/ApplicantLogin" element={<ApplicantLogin />} />
+            <Route path="/ClerkLogin" element={<ClerkLogin />} />
+            <Route path="/SignUp" element={<SignUpPage />} />
+            <Route path="/homeScreen" element={<HomeScreen />} />
+            <Route path="/application/:applicationNumber/enterApplicant" element={<EnterApplicant />} />
+            <Route path="/application/:applicationNumber/uploadInvoices" element={<UploadInvoices />} />
+            <Route path="/application/:applicationNumber/overviewInvoices" element={<OverviewInvoices />} />
+            <Route path="/application/:applicationNumber/summary" element={<Summary />} />
+          </Routes>
+        </Router>
+      </ApplicantProvider>
+    </ApplicationDataProvider>
   );
 }
 

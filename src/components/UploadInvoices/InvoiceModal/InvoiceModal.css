@@ -1,0 +1,137 @@
+/* This is the overlay that fills the entire viewport and darkens the background */
+.invoiceModalOverlay {
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    z-index: 10; /* Make sure it's above other content */
+  }
+  
+  .invoiceModal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    max-width: 600px; 
+    z-index: 11; 
+    margin: auto;
+    
+  }
+
+  .InvoiceModal-formBlocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .InvoiceModal-formBlock {
+    flex: 1;
+    min-width: 200px; 
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .footerNavigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 auto; 
+  }
+  
+  
+  .fullWidthBlock {
+    width: 100%;
+    margin-right: 10px;
+  }
+  
+  .halfWidthBlock {
+    width: calc(50% - 20px);
+    margin-right: 10px;
+  }
+  
+  .separator {
+    width: 100%;
+    border-top: 1px solid #eaeaea; /* Visual separator */
+    margin: 20px 0;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    justify-content: center; /* Center buttons in the container */
+    gap: 10px; /* Adjust the space between buttons */
+  }
+  
+  .buttonGroup button {
+    flex: 1; /* Buttons will grow equally to fill space */
+    height: 40px; /* Define a fixed height for buttons */
+    padding: 8px 20px; /* Padding for larger click area, adjusted to ensure uniform height */
+    line-height: 1.5; /* Ensuring line height is the same for both buttons */
+    border: 1px solid transparent; /* Border to prevent resizing on hover/focus if border style changes */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Standard font size */
+    transition: all 0.3s ease; /* Smooth transition for effects */
+    cursor: pointer; /* Cursor for clickable items */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+
+  .buttonGroup button {
+    text-align: center; /* Center text in buttons */
+  }
+  
+  /* If using box-shadow or border on hover or focus, make sure to offset this with margin or inset box-shadow */
+  .buttonGroup button:hover,
+  .buttonGroup button:focus {
+    box-shadow: inset 0 0 0 1px #007bff; /* Example of inset shadow that does not affect size */
+  }
+  
+  .cancelButton {
+    background-color: #f8f9fa; /* Light grey background */
+    color: #212529; /* Dark text for contrast */
+  }
+  
+  .saveButton {
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text for contrast */
+  }
+  
+  /* Hover effect for buttons */
+  .buttonGroup button:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  }
+  
+  /* Active state for buttons */
+  .buttonGroup button:active {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Smaller shadow for pressed effect */
+  }
+  
+  /* Focus state for buttons to maintain accessibility */
+  .buttonGroup button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Custom focus ring */
+  }
+  
+  
+  
